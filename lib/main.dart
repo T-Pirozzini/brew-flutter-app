@@ -9,20 +9,13 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('my first app'),
+        title: Text('PsychHelp'),
         centerTitle: true,
-        backgroundColor: Colors.red[600],
+        backgroundColor: Colors.green[600],
       ),
       body: Center(
-        child: Text(
-          'Hello Ninjas',
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2.0,
-            color: Colors.grey[600],
-            fontFamily: 'IndieFlower',
-          ),
+        child: Image(
+          image: Image.asset('assets/finn-unsplash.jpg'),
         ),
       ),
       floatingActionButton: FloatingActionButton(
