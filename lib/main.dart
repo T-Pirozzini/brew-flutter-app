@@ -14,8 +14,13 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.green[600],
       ),
       body: Center(
-        child: Image(
-          image: Image.asset('assets/finn-unsplash.jpg'),
+        child: ElevatedButton.icon(
+          onPressed: () {},
+          icon: Icon(
+            Icons.mail
+          ),
+          label: Text('mail me'),
+          style: ElevatedButton.styleFrom(primary: Colors.amber),
         ),
       ),
       floatingActionButton: FloatingActionButton(
