@@ -15,7 +15,9 @@ class Home extends StatelessWidget {
       ),
       body: Center(
         child: ElevatedButton.icon(
-          onPressed: () {},
+          onPressed: () {
+            print('you clicked me');
+          },
           icon: Icon(
             Icons.mail
           ),
