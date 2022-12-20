@@ -13,37 +13,35 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.green[600],
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        crossAxisAlignment: CrossAxisAlignment.end,
+      body: Row(
         children: [
-          Row(
-            children: [
-              Text('hello im a row'),
-              Text("so am i!"),
-            ],
+          Expanded(
+              child: Image.asset('assets/finn-unsplash.jpg'),
+            flex: 3,
           ),
-          Row(
-            children: [
-              Container(
-                padding: EdgeInsets.all(30.0),
-                color: Colors.redAccent,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text('two'),
-                ),
-              ),
-            ],
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.cyan,
+              child: Text('One'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(20.0),
-            color: Colors.cyan,
-            child: Text('one'),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.pinkAccent,
+              child: Text('Two'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(40.0),
-            color: Colors.lightGreenAccent,
-            child: Text('three'),
+          Expanded(
+            flex: 3,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.amber,
+              child: Text('Three'),
+            ),
           ),
         ],
       ),
